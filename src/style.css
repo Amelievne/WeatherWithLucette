@@ -27,7 +27,7 @@ body.forecast-page {
   background-size: 28px 28px;
 }
 
-h1 {
+.main-page h1 {
   color: #f42d7d;
   font-family: "Kalam", cursive;
   font-weight: 700;
@@ -36,7 +36,27 @@ h1 {
   margin: auto;
   padding: 75px 0 0 0;
 }
-
+h1 {
+  color: #f42d7d;
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  text-align: center;
+  font-size: 55px;
+  margin: auto;
+  padding: 20px 0 0 0;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+}
+h2 {
+  color: #8cc553;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  text-align: center;
+  font-size: 93px;
+  margin: auto;
+  padding: 0px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
 img {
   background-color: #f5dbcc;
   border: 1px solid #f42d7d;
@@ -46,12 +66,72 @@ img {
   width: 212px;
   padding: 5px;
 }
+.lucette {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lucette img {
+  width: 250px;
+}
 
 form {
   display: flex;
   justify-content: center;
-  margin: 46px;
+  margin: 10px;
   height: 28px;
+}
+main {
+  display: block;
+  margin: 43px auto;
+  width: 700px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 30px;
+}
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: auto;
+  position: relative;
+  top: -40px;
+}
+
+.temperature {
+  color: #f42d7d;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  text-align: left;
+  font-size: 120px;
+  margin: auto;
+  padding: 0;
+  position: relative;
+  left: 20px;
+}
+.description {
+  text-align: right;
+  color: #8cc553;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-size: 30px;
+  margin: auto;
+  padding: 0px 0 0 0;
+  position: relative;
+  top: -80px;
+  right: 30px;
+}
+
+.weather-block {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 400px;
+  grid-gap: 2px;
+  padding: 30px 10px;
+}
+
+.main-page form {
+  margin: 46px;
 }
 
 .block {
