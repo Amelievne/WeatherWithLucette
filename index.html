@@ -10,20 +10,53 @@
       href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
   </head>
-  <body class="main-page">
-    <section class="block">
+  <body>
+    <header>
       <h1>Weather with Lucette</h1>
-      <img src="img/frog_base.PNG" alt="Lucette the frog" />
-      <form action="pages/forecast.html" class="search-engine">
+
+      <form action="" class="search-engine" id="search-form">
         <input
           type="text"
           placeholder="City"
           class="city-input"
-          id="main-input" />
+          id="search-form-input" />
         <input type="submit" value="Go" class="go-btn" />
       </form>
-    </section>
+    </header>
+
+    <main class="weather-block">
+      <div class="weather-description">
+        <h2 class="city" id="current-city"></h2>
+        <h3 id="current-time"></h3>
+        <ul class="weather">
+          <li class="temperature"><span id="current-temperature"></span>ºC</li>
+          <li class="description sky" id="current-condition"></li>
+          <li class="description humidity">
+            Humidity : <span id="current-humidity"></span>
+          </li>
+          <li class="description wind">
+            Wind : <span id="current-wind"></span>
+          </li>
+        </ul>
+      </div>
+      <div class="lucette" id="lucette-img"></div>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Amelievne" target="_blank">Amélie Vienne</a
+        >, is open-sourced on
+        <a
+          href="https://github.com/Amelievne/WeatherWithLucette"
+          target="_blank"
+          >Gituhub</a
+        >
+        and Hosted on
+        <a href="https://weatherwithlucette.netlify.app/" target="_blank"
+          >Netlify</a
+        >.
+      </footer>
+    </main>
     <script src="src/index.js"></script>
   </body>
 </html>

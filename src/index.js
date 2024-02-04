@@ -9,7 +9,7 @@ function refreshWeather(response) {
   let date = new Date(response.data.time * 1000);
   let lucetteElement = document.querySelector("#lucette-img");
 
-  lucetteElement.innerHTML = `<img src="${response.data.condition.icon_url}" 
+  lucetteElement.innerHTML = `<img src="img/${response.data.condition.icon}.png" 
   alt="Lucette the frog" />`;
 
   cityElement.innerHTML = response.data.city;

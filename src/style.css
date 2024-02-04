@@ -15,11 +15,8 @@
   font-weight: 700;
   font-style: normal;
 }
-body.main-page {
-  background-color: #131f35;
-}
 
-body.forecast-page {
+body {
   background-color: #6adceb;
   opacity: 1;
   background-image: linear-gradient(#fff 2px, transparent 2px),
@@ -27,15 +24,6 @@ body.forecast-page {
   background-size: 28px 28px;
 }
 
-.main-page h1 {
-  color: #f42d7d;
-  font-family: "Kalam", cursive;
-  font-weight: 700;
-  text-align: center;
-  font-size: 38px;
-  margin: auto;
-  padding: 75px 0 0 0;
-}
 h1 {
   color: #f42d7d;
   font-family: "Kalam", cursive;
@@ -73,26 +61,12 @@ h3 {
   top: 0px;
 }
 img {
-  background-color: #f5dbcc;
   border: 1px solid #f42d7d;
   border-radius: 50%;
   display: block;
   margin: auto;
   width: 212px;
-  padding: 5px;
 }
-.lucette {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.lucette img {
-  width: 250px;
-}
-.broken-clouds-day {
-  src: img;
-}
-
 form {
   display: flex;
   justify-content: center;
@@ -102,8 +76,7 @@ form {
 main {
   display: block;
   margin: 43px auto;
-  width: 700px;
-  height: 418px;
+  width: 800px;
   background: rgba(255, 255, 255, 0.5);
   border: none;
   border-radius: 30px;
@@ -115,6 +88,34 @@ ul {
   position: relative;
   top: -20px;
 }
+footer {
+  color: #f42d7d;
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  text-align: center;
+  font-size: 15px;
+  width: 800px;
+  margin: auto;
+  padding: 20px 0 0 0;
+  bottom: 0%;
+  position: fixed;
+}
+a {
+  text-decoration: none;
+  color: #f42d7d;
+  font-weight: 400;
+}
+.lucette {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lucette img {
+  width: 250px;
+}
+.lucette-logo {
+  background-color: #f5dbcc;
+}
 
 .temperature {
   color: #f42d7d;
@@ -124,7 +125,7 @@ ul {
   font-size: 120px;
   line-height: 1;
   margin: auto;
-  padding: 45px 20px 0;
+  padding: 59px 36px 0;
   position: relative;
 }
 .description {
@@ -135,16 +136,14 @@ ul {
   font-size: 30px;
   line-height: 1.5;
   margin: auto;
-  padding: 0px 0 0 0;
+  padding: 0 0 0 0;
   position: relative;
-  top: 0px;
   right: 20px;
 }
 
 .weather-block {
   display: grid;
   grid-template-columns: 60% 40%;
-  grid-template-rows: 418px;
   grid-gap: 2px;
   padding: 10px 10px;
 }
