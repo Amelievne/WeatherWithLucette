@@ -7,6 +7,10 @@ function refreshWeather(response) {
   let windElement = document.querySelector("#current-wind");
   let timeElement = document.querySelector("#current-time");
   let date = new Date(response.data.time * 1000);
+  let lucetteElement = document.querySelector("#lucette-img");
+
+  lucetteElement.innerHTML = `<img src="${response.data.condition.icon_url}" 
+  alt="Lucette the frog" />`;
 
   cityElement.innerHTML = response.data.city;
   conditionElement.innerHTML = response.data.condition.description;
@@ -26,7 +30,6 @@ function formatDate(date) {
   if (hours < 10) {
     hours = `0${hours}`;
   }
-
   let days = [
     "Sunday",
     "Monday",
@@ -36,7 +39,6 @@ function formatDate(date) {
     "Friday",
     "Saturday",
   ];
-
   let formattedDay = days[day];
   return `${formattedDay} ${hours}:${minutes}`;
 }

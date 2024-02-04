@@ -53,9 +53,10 @@ h2 {
   text-align: center;
   font-size: 93px;
   margin: auto;
-  padding: 0px 0 0 0;
+  padding: 10px 0 0 0;
   display: flex;
   justify-content: center;
+  line-height: 1;
 }
 h3 {
   color: #7baf48;
@@ -63,12 +64,13 @@ h3 {
   font-weight: 400;
   text-align: center;
   font-size: 33px;
+  line-height: 1;
   margin: auto;
   padding: 0 0 0 0;
   display: flex;
   justify-content: center;
   position: relative;
-  top: -37px;
+  top: 0px;
 }
 img {
   background-color: #f5dbcc;
@@ -101,7 +103,7 @@ main {
   display: block;
   margin: 43px auto;
   width: 700px;
-  height: 480px;
+  height: 418px;
   background: rgba(255, 255, 255, 0.5);
   border: none;
   border-radius: 30px;
@@ -120,11 +122,10 @@ ul {
   font-weight: 400;
   text-align: left;
   font-size: 120px;
+  line-height: 1;
   margin: auto;
-  padding: 0;
+  padding: 45px 20px 0;
   position: relative;
-  left: 20px;
-  top: -20px;
 }
 .description {
   text-align: right;
@@ -132,17 +133,18 @@ ul {
   font-family: "Kalam", cursive;
   font-weight: 400;
   font-size: 30px;
+  line-height: 1.5;
   margin: auto;
   padding: 0px 0 0 0;
   position: relative;
-  top: -50px;
+  top: 0px;
   right: 20px;
 }
 
 .weather-block {
   display: grid;
   grid-template-columns: 60% 40%;
-  grid-template-rows: 480px;
+  grid-template-rows: 418px;
   grid-gap: 2px;
   padding: 10px 10px;
 }
