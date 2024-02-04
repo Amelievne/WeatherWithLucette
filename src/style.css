@@ -74,6 +74,9 @@ img {
 .lucette img {
   width: 250px;
 }
+.broken-clouds-day {
+  src: img;
+}
 
 form {
   display: flex;
