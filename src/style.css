@@ -58,7 +58,7 @@ h2 {
   justify-content: center;
 }
 h3 {
-  color: #8cc553;
+  color: #7baf48;
   font-family: "Kalam", cursive;
   font-weight: 400;
   text-align: center;
@@ -68,7 +68,7 @@ h3 {
   display: flex;
   justify-content: center;
   position: relative;
-  top: -40px;
+  top: -37px;
 }
 img {
   background-color: #f5dbcc;
