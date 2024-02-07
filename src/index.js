@@ -10,7 +10,7 @@ function refreshWeather(response) {
   let lucetteElement = document.querySelector("#lucette-img");
 
   let temperatureDegree = temperaturePerceived(temperature);
-  console.log(temperatureDegree);
+
   lucetteElement.innerHTML = `<img src="img/${response.data.condition.icon}-${temperatureDegree}.png" 
   alt="Lucette the frog" />`;
 
@@ -66,8 +66,29 @@ function handleSearchSubmit(event) {
 
   searchCity(searchInput.value);
 }
+function displayForecast() {
+  let days = ["Wed", "Thu", "Fri", "Sat", "Sun"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml += `
+      <div class="weather-forecast-day">
+        <div class="weather-forecast-date">${day}</div>
+          <div class="weather-forecast-temp">
+            <span class="weather-forecast-min">12º</span>
+              <span class="weather-forecast-max">15º</span>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+  let forecastElement = document.querySelector("#forecast");
+
+  forecastElement.innerHTML = forecastHtml;
+}
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Valencia");
+displayForecast();

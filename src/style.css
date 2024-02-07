@@ -35,8 +35,6 @@ footer {
   width: 800px;
   margin: auto;
   padding: 20px 0 0 0;
-  bottom: 0%;
-  position: fixed;
 }
 form {
   display: flex;
@@ -182,8 +180,8 @@ ul {
 .weather-forecast {
   background-color: #c5e2a9;
   border-radius: 15px;
-  display: grid;
-  grid-template-columns: repeat(5, 20%);
+  display: flex;
+  justify-content: space-around;
   margin: auto;
   width: 800px;
 }
