@@ -47,7 +47,7 @@ h1 {
   font-family: "Kalam", cursive;
   font-weight: 700;
   text-align: center;
-  font-size: 55px;
+  font-size: 45px;
   margin: auto;
   padding: 20px 0 0 0;
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
@@ -57,7 +57,7 @@ h2 {
   font-family: "Kalam", cursive;
   font-weight: 400;
   text-align: center;
-  font-size: 93px;
+  font-size: 83px;
   margin: auto;
   padding: 10px 0 0 0;
   display: flex;
@@ -69,7 +69,7 @@ h3 {
   font-family: "Kalam", cursive;
   font-weight: 400;
   text-align: center;
-  font-size: 33px;
+  font-size: 23px;
   line-height: 1;
   margin: auto;
   padding: 0 0 0 0;
@@ -88,7 +88,7 @@ img {
 main {
   display: block;
   margin: 43px auto;
-  width: 700px;
+  width: 650px;
   background: rgba(255, 255, 255, 0.5);
   border: none;
   border-radius: 30px;
@@ -102,7 +102,7 @@ ul {
 }
 
 .lucette img {
-  width: 250px;
+  width: 240px;
 }
 
 .block {
@@ -133,7 +133,7 @@ ul {
   color: #8cc553;
   font-family: "Kalam", cursive;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1.5;
   margin: auto;
   padding: 0 0 0 0;
@@ -148,6 +148,12 @@ ul {
   border-radius: 0px 30px 30px 0px;
   width: 45px;
   font-family: "Kalam", cursive;
+  transition: all 200ms ease-in-out;
+}
+.go-btn:hover {
+  background-color: #f42d7d;
+  color: #c5e2a9;
+  cursor: pointer;
 }
 .lucette {
   display: flex;
@@ -165,7 +171,7 @@ ul {
   font-family: "Kalam", cursive;
   font-weight: 400;
   text-align: left;
-  font-size: 120px;
+  font-size: 110px;
   line-height: 1;
   margin: auto;
   padding: 59px 36px 0;
@@ -183,7 +189,7 @@ ul {
   display: flex;
   justify-content: space-around;
   margin: auto;
-  width: 700px;
+  width: 600px;
 }
 .weather-forecast-date {
   color: #7baf48;
@@ -199,10 +205,16 @@ ul {
   font-weight: 700;
   text-align: center;
 }
-.weather-forecast-lucette img {
-  width: 63px;
-}
 .weather-forecast-min {
   opacity: 0.65;
   font-weight: 400;
+}
+.weather-forecast-lucette img {
+  width: 63px;
+  transition: all 200ms ease-in-out;
+}
+.weather-forecast-lucette:hover {
+  transform: scale(2);
+  position: relative;
+  z-index: 2;
 }
