@@ -3,19 +3,22 @@
   font-weight: 300;
   font-style: normal;
 }
-
 .kalam-regular {
   font-family: "Kalam", cursive;
   font-weight: 400;
   font-style: normal;
 }
-
 .kalam-bold {
   font-family: "Kalam", cursive;
   font-weight: 700;
   font-style: normal;
 }
 
+a {
+  text-decoration: none;
+  color: #f42d7d;
+  font-weight: 400;
+}
 body {
   background-color: #6adceb;
   opacity: 1;
@@ -23,7 +26,24 @@ body {
     linear-gradient(to right, #fff 2px, #6adceb 2px);
   background-size: 28px 28px;
 }
-
+footer {
+  color: #f42d7d;
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+  text-align: center;
+  font-size: 15px;
+  width: 800px;
+  margin: auto;
+  padding: 20px 0 0 0;
+  bottom: 0%;
+  position: fixed;
+}
+form {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  height: 28px;
+}
 h1 {
   color: #f42d7d;
   font-family: "Kalam", cursive;
@@ -67,12 +87,6 @@ img {
   margin: auto;
   width: 212px;
 }
-form {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-  height: 28px;
-}
 main {
   display: block;
   margin: 43px auto;
@@ -88,68 +102,9 @@ ul {
   position: relative;
   top: -20px;
 }
-footer {
-  color: #f42d7d;
-  font-family: "Kalam", cursive;
-  font-weight: 300;
-  text-align: center;
-  font-size: 15px;
-  width: 800px;
-  margin: auto;
-  padding: 20px 0 0 0;
-  bottom: 0%;
-  position: fixed;
-}
-a {
-  text-decoration: none;
-  color: #f42d7d;
-  font-weight: 400;
-}
-.lucette {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .lucette img {
   width: 250px;
-}
-.lucette-logo {
-  background-color: #f5dbcc;
-}
-
-.temperature {
-  color: #f42d7d;
-  font-family: "Kalam", cursive;
-  font-weight: 400;
-  text-align: left;
-  font-size: 120px;
-  line-height: 1;
-  margin: auto;
-  padding: 59px 36px 0;
-  position: relative;
-}
-.description {
-  text-align: right;
-  color: #8cc553;
-  font-family: "Kalam", cursive;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 1.5;
-  margin: auto;
-  padding: 0 0 0 0;
-  position: relative;
-  right: 20px;
-}
-
-.weather-block {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-gap: 2px;
-  padding: 10px 10px;
-}
-
-.main-page form {
-  margin: 46px;
 }
 
 .block {
@@ -165,15 +120,6 @@ a {
     linear-gradient(to right, #fff 2px, #6adceb 2px);
   background-size: 28px 28px;
 }
-.go-btn {
-  background-color: #8cc553;
-  font-size: 15px;
-  color: #131f35;
-  border: none;
-  border-radius: 0px 30px 30px 0px;
-  width: 45px;
-  font-family: "Kalam", cursive;
-}
 .city-input {
   background-color: #c5e2a9;
   font-size: 15px;
@@ -183,4 +129,78 @@ a {
   width: 180px;
   padding: 10px;
   font-family: "Kalam", cursive;
+}
+.description {
+  text-align: right;
+  color: #8cc553;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.5;
+  margin: auto;
+  padding: 0 0 0 0;
+  position: relative;
+  right: 20px;
+}
+.go-btn {
+  background-color: #8cc553;
+  font-size: 15px;
+  color: #131f35;
+  border: none;
+  border-radius: 0px 30px 30px 0px;
+  width: 45px;
+  font-family: "Kalam", cursive;
+}
+.lucette {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lucette-logo {
+  background-color: #f5dbcc;
+}
+.main-page form {
+  margin: 46px;
+}
+.temperature {
+  color: #f42d7d;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  text-align: left;
+  font-size: 120px;
+  line-height: 1;
+  margin: auto;
+  padding: 59px 36px 0;
+  position: relative;
+}
+.weather-block {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 2px;
+  padding: 10px 10px;
+}
+.weather-forecast {
+  background-color: #c5e2a9;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  margin: auto;
+  width: 800px;
+}
+.weather-forecast-date {
+  color: #7baf48;
+  font-family: "Kalam", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+.weather-forecast-temp {
+  color: #f42d7d;
+  font-family: "Kalam", cursive;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+.weather-forecast-min {
+  opacity: 0.7;
 }
