@@ -24,7 +24,7 @@ function refreshWeather(response) {
   getForecast(response.data.city);
 }
 function temperaturePerceived(temp) {
-  if (temp < 10) {
+  if (temp < 12) {
     return "cold";
   }
   if (temp < 25) {
@@ -90,11 +90,16 @@ function displayForecast(response) {
 
   response.data.daily.forEach(function (day, index) {
     if (index < 5) {
+      let temperatureDegree = temperaturePerceived(
+        (Math.round(day.temperature.minimum) * 2 +
+          Math.round(day.temperature.maximum)) /
+          3
+      );
       forecastHtml += `
       <div class="weather-forecast-day">
         <div class="weather-forecast-date">${formatDay(day.time)}</div>
         <div class="weather-forecast-lucette">
-        <img src="img/${day.condition.icon}-norm.png"/>
+        <img src="img/${day.condition.icon}-${temperatureDegree}.png"/>
         </div>
           <div class="weather-forecast-temp">
             <span class="weather-forecast-min">${Math.round(

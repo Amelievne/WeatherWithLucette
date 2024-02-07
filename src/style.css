@@ -25,48 +25,46 @@ body {
   background-image: linear-gradient(#fff 2px, transparent 2px),
     linear-gradient(to right, #fff 2px, #6adceb 2px);
   background-size: 28px 28px;
+  font-family: "Kalam", cursive;
 }
 footer {
   color: #f42d7d;
-  font-family: "Kalam", cursive;
   font-weight: 300;
   text-align: center;
   font-size: 15px;
   width: 800px;
   margin: auto;
-  padding: 20px 0 0 0;
+  padding: 10px 0 0 0;
 }
 form {
   display: flex;
   justify-content: center;
-  margin: 10px;
+  margin: 20px 10px;
   height: 28px;
 }
 h1 {
   color: #f42d7d;
-  font-family: "Kalam", cursive;
   font-weight: 700;
   text-align: center;
-  font-size: 45px;
-  margin: auto;
-  padding: 20px 0 0 0;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+  font-size: 50px;
+  margin: 30px 0;
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.45);
+  padding: 30px 0;
+  line-height: 1;
 }
 h2 {
-  color: #8cc553;
-  font-family: "Kalam", cursive;
+  color: rgb(140, 197, 83);
   font-weight: 400;
   text-align: center;
   font-size: 83px;
   margin: auto;
-  padding: 10px 0 0 0;
+  padding: 21px 0 0 0;
   display: flex;
   justify-content: center;
   line-height: 1;
 }
 h3 {
-  color: #7baf48;
-  font-family: "Kalam", cursive;
+  color: #75a842;
   font-weight: 400;
   text-align: center;
   font-size: 23px;
@@ -83,11 +81,10 @@ img {
   border-radius: 50%;
   display: block;
   margin: auto;
-  width: 212px;
 }
 main {
   display: block;
-  margin: 43px auto;
+  margin: 15px auto 15px;
   width: 650px;
   background: rgba(255, 255, 255, 0.5);
   border: none;
@@ -102,7 +99,7 @@ ul {
 }
 
 .lucette img {
-  width: 240px;
+  width: 250px;
 }
 
 .block {
@@ -120,18 +117,18 @@ ul {
 }
 .city-input {
   background-color: #c5e2a9;
+  font-family: "Kalam", cursive;
+
   font-size: 15px;
   color: #131f35;
   border: none;
   border-radius: 30px 0px 0px 30px;
   width: 180px;
   padding: 10px;
-  font-family: "Kalam", cursive;
 }
 .description {
   text-align: right;
   color: #8cc553;
-  font-family: "Kalam", cursive;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
@@ -142,12 +139,13 @@ ul {
 }
 .go-btn {
   background-color: #8cc553;
+  font-family: "Kalam", cursive;
+
   font-size: 15px;
   color: #131f35;
   border: none;
   border-radius: 0px 30px 30px 0px;
   width: 45px;
-  font-family: "Kalam", cursive;
   transition: all 200ms ease-in-out;
 }
 .go-btn:hover {
@@ -166,9 +164,9 @@ ul {
 .main-page form {
   margin: 46px;
 }
+
 .temperature {
   color: #f42d7d;
-  font-family: "Kalam", cursive;
   font-weight: 400;
   text-align: left;
   font-size: 110px;
@@ -179,7 +177,7 @@ ul {
 }
 .weather-block {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 55% 45%;
   grid-gap: 2px;
   padding: 10px 10px;
 }
@@ -189,18 +187,17 @@ ul {
   display: flex;
   justify-content: space-around;
   margin: auto;
-  width: 600px;
+  width: 650px;
+  padding: 0 10px;
 }
 .weather-forecast-date {
   color: #7baf48;
-  font-family: "Kalam", cursive;
   font-size: 25px;
   font-weight: 400;
   text-align: center;
 }
 .weather-forecast-temp {
   color: #f42d7d;
-  font-family: "Kalam", cursive;
   font-size: 25px;
   font-weight: 700;
   text-align: center;
