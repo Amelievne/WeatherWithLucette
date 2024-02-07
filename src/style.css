@@ -188,17 +188,21 @@ ul {
 .weather-forecast-date {
   color: #7baf48;
   font-family: "Kalam", cursive;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   text-align: center;
 }
 .weather-forecast-temp {
   color: #f42d7d;
   font-family: "Kalam", cursive;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   text-align: center;
 }
+.weather-forecast-lucette img {
+  width: 63px;
+}
 .weather-forecast-min {
   opacity: 0.65;
+  font-weight: 400;
 }
