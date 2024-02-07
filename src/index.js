@@ -9,7 +9,9 @@ function refreshWeather(response) {
   let date = new Date(response.data.time * 1000);
   let lucetteElement = document.querySelector("#lucette-img");
 
-  lucetteElement.innerHTML = `<img src="img/${response.data.condition.icon}.png" 
+  let temperatureDegree = temperaturePerceived(temperature);
+  console.log(temperatureDegree);
+  lucetteElement.innerHTML = `<img src="img/${response.data.condition.icon}-${temperatureDegree}.png" 
   alt="Lucette the frog" />`;
 
   cityElement.innerHTML = response.data.city;
@@ -18,6 +20,16 @@ function refreshWeather(response) {
   windElement.innerHTML = `${Math.round(response.data.wind.speed)}km/h`;
   timeElement.innerHTML = formatDate(date);
   temperatureElement.innerHTML = Math.round(temperature);
+}
+function temperaturePerceived(temp) {
+  if (temp < 10) {
+    return "cold";
+  }
+  if (temp < 25) {
+    return "norm";
+  } else {
+    return "hot";
+  }
 }
 function formatDate(date) {
   let minutes = date.getMinutes();
